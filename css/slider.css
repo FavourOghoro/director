@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'impact', sans-serif;
+    font-size: 10px;
+    background: #222831;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+img{
+    display: block;
+    object-fit: cover;
+}
+.image-container{
+    height: 75vh;
+    width: 75vw;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.inner{
+	overflow: hidden;
+}
+.inner img{
+	transition: all 1.5s ease;
+}
+.inner img:hover{
+	transform: scale(1.5);
+}
+
+.slides{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.slide{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(50% 50%,50% 50%,50% 50%,50% 50%);
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    animation: animate 15s linear infinite;
+}
+.slide:nth-child(1){
+    animation-delay: 0s;
+}
+.slide:nth-child(2){
+    animation-delay: 3s;
+}
+.slide:nth-child(3){
+    animation-delay: 6s;
+}
+.slide:nth-child(4){
+    animation-delay: 9s;
+}
+.slide:nth-child(5){
+    animation-delay: 12s;
+}
+
+@keyframes animate{
+    0%{
+    -webkit-clip-path: polygon(50% 50%,50% 50%,50% 50%,50% 50%);
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    }
+    2%{
+        -webkit-clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%);            
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+    }
+    5%{
+        -webkit-clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);            
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    15%{
+        -webkit-clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);            
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    18%{
+        -webkit-clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%);            
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+    }
+    20%,100%{
+        -webkit-clip-path: polygon(50% 50%,50% 50%,50% 50%,50% 50%);
+        clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+        }
+}

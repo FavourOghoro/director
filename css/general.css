@@ -1,0 +1,72 @@
+#button1{
+	padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.4s;
+    height:90px;
+    width:auto;
+}
+#button1:hover{
+    background-color: orange;
+}
+.button2{
+    border-color: rgb(109, 178, 243);
+    color: rgb(109, 178, 243);
+    background-color: white;
+    transition: all ease-in-out 0.4s;
+    height:85px;
+    width:auto;
+}
+.button2:hover{
+    background-color:rgb(109, 178, 243) ;
+    color: white;
+}
+
+.txt{
+    color:grey;
+}
+ul{
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+    color: grey;
+    font-size: 13px;
+}
+.boder{
+    padding-left: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color: grey;
+}
+.side{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+
+}
+
+.contract{
+	background-image: url("../img/contract.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.up{
+    padding-top: 20px;
+}
+
+.side:not(:last-of-type){
+    margin-bottom:40px;
+}
+.line{
+    border-bottom: 2px solid black;
+}
+
+.side:not(:last-of-type) ul li{
+    border-bottom: 0.02em solid black;
+    padding: 2px;
+}

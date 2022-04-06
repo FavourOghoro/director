@@ -1,0 +1,36 @@
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+}
+
+#footer{
+	background-color: grey;
+	 height:100px; 
+
+}
+ul{
+	list-style: none;
+	padding: 70px 0;
+}
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+.footer-col{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+.text{
+	color:white;
+}

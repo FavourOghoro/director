@@ -1,0 +1,137 @@
+/* CSS Document */
+
+h1{ color:#FFFFFF;
+	text-align:center;
+	}
+.navigation{
+}
+.slider{height: auto;
+		width: auto;
+}
+.text{
+	color: #000000;
+	align: "center";
+}
+.designs{ float: right;
+		align-items: center;
+}
+.social{
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+	border: 2px solid red;
+
+}
+section{
+	background-color: gray;
+}
+.image{
+	background-image: url(../img/red.jpg);
+}
+.sitelayout{
+	padding-left: 40px;
+	height: 50px;
+}
+
+.cardcont{
+	padding-left: 40px;
+	/* padding-right: 40px;
+	padding-top:40px; */
+}
+
+.inner{
+	overflow: hidden;
+}
+.inner img{
+	transition: all 1.5s ease;
+}
+
+.inner:hover img {
+	transform: scale(1.5);
+}
+
+ h3{
+	color: black;
+}
+
+.heading{
+	width: fit-content;
+}
+
+.underline-container{
+	width: 100%;
+	height: 4px;
+	border-radius: 3px;
+}
+
+.underline{
+	width: 30%;
+	height: auto;
+	border: blue;
+}
+.ourteam{
+	padding-left: 40px;
+}
+.inner{
+	overflow: hidden;
+}
+.inner img{
+	transition: all 1.5s ease;
+}
+.inner img:hover{
+	transform: scale(1.5);
+} 
+.slow_fade{
+	height: 50px;
+	width: 150px;
+}
+
+.client{
+	background-image: url("../img/back.jpeg");
+}
+.box-text{
+	margin: 40px 40px 40px 40px;
+}
+.sub{
+	display: flex;
+}
+.but{
+	margin-left: 40px;
+}
+.fit{
+	width: fit-content;
+}
+.pad{
+	padding-bottom: 40px;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.txt{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.abt{
+	background-image: url("../img/model.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.prjt{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+
+
+@media screen and (max-width:768px) {
+	.but{
+		margin-left: 10px;
+	}
+}
